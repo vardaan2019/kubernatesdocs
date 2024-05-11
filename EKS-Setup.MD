@@ -4,7 +4,10 @@ You can follow same procedure in the official  AWS document [Getting started wit
 
 #### Pre-requisites: 
   - an EC2 Instance (Kubernetes Management Host)
-
+####Install Aws CLI
+curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
+unzip awscliv2.zip
+sudo ./aws/install
 # 
 1. Install and setup kubectl on Management host
    a. Download kubectl version 1.19.6 
