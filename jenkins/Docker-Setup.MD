@@ -15,6 +15,7 @@ systemctl enable docker
 ```sh
    vi /etc/sudoers
    jenkins ALL=(ALL) NOPASSWD: ALL
+:q!
 ```   
    
 
