@@ -51,9 +51,8 @@ You can follow same procedure in the official  AWS document [Getting started wit
    --zones <AZ-1>,<AZ-2>
    
    example:
-   eksctl create cluster --name cloudfreak-cluster \
-      --region ap-south-1 \
-   --node-type t2.medium \
+   eksctl create cluster --name cloudfreak-cluster    --region us-east-1 --node-type t3.medium
+   eksctl delete cluster cloudfreak-cluster --region us-east-1
     ```
 
 6. To delete the EKS clsuter 
