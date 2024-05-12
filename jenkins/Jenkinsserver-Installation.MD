@@ -10,6 +10,12 @@ We will be using open java for our demo, Get latest version from http://openjdk.
 ```sh
 yum install java-11*
 
+
+```
+
+## Install Java 17
+```sh
+sudo yum install java-17-amazon-corretto -y
 ```
 
 ### Confirm Java Version
