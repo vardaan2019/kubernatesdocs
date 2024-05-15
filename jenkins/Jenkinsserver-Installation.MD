@@ -48,18 +48,21 @@ You can install jenkins using the rpm or by setting up the repo. We will setup t
 Get latest version of jenkins from https://pkg.jenkins.io/redhat-stable/
 ```sh
 yum -y install wget
-wget -O /etc/yum.repos.d/jenkins.repo https://pkg.jenkins.io/redhat-stable/jenkins.repo
-rpm --import https://pkg.jenkins.io/redhat-stable/jenkins.io.key
+sudo wget -O /etc/yum.repos.d/jenkins.repo \
+    https://pkg.jenkins.io/redhat-stable/jenkins.repo
+sudo rpm --import https://pkg.jenkins.io/redhat-stable/jenkins.io-2023.key
 yum -y install jenkins
 ```
 
 ### Start Jenkins
 ```sh
+# Setup Jenkins to start at boot,
+systemctl enable jenkins
+
 # Start jenkins service
 systemctl start jenkins
 
-# Setup Jenkins to start at boot,
-systemctl enable jenkins
+
 ```
 
 #### Accessing Jenkins
